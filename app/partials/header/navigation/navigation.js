@@ -19,7 +19,7 @@ export default class Navigation extends React.Component {
 						<NavLink to={{ pathname: 'about' }}>About</NavLink>
 					</li>
 					<li>
-						<NavLink to={{ pathname: 'contact' }}>Contact</NavLink>
+						<a href="mailto:melanie.bockmann@yahoo.com">Contact</a>
 					</li>
 				</ul>
 			</nav>
