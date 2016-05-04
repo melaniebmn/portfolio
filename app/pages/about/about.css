@@ -1,0 +1,79 @@
+.about {
+	padding: 170px 0 0;	
+}
+
+.about section {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.about section:nth-child(2) {
+	margin: 10% 0 10% auto;
+}
+
+.about section article {
+	position: relative;
+	max-width: 650px;
+	text-align: right;
+	margin: 0 0 0 auto;
+	padding: 5% 5% 5% 8%;
+	background: #e53b37;
+	color: #fff;
+}
+
+.about section article:before {
+	position: absolute;
+	top: 10px;
+	left: -150px;
+	content: url(../../../public/assets/img/profile.png);
+}
+
+.about section article p {
+    font-family: 'Josefin Light';
+    font-size: 22px;
+	line-height: 2;
+	letter-spacing: 5px;
+}
+
+.about section:nth-child(3) {
+	padding: 120px 0 150px;
+}
+
+.about section:nth-child(3):before {
+	position: absolute;
+	left: 0;
+	margin-top: -10.5%;
+	content: url(../../../public/assets/img/shapes/zigzag-black.png);
+}
+
+.about section:nth-child(3) img {
+	width: 100%;
+	margin: 100px auto 0;
+}
+
+@media only screen and (max-width: 950px) {
+	.about section article {
+		padding: 5% 5% 5% 18%;
+	}
+	.about section article:before {
+		top: 20px;
+		left: -100px;
+		content: url(../../../public/assets/img/profile-mobile.png);
+	}
+	.about section:nth-child(3):before {
+		margin-top: -16%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.about section article {
+		padding: 5%;
+	}
+	.about section article:before {
+		display: none;
+	}
+	.about section:nth-child(3):before {
+		margin-top: -20%;
+	}
+}

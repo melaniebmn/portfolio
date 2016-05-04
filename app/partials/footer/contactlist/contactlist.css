@@ -1,0 +1,73 @@
+.contactlist {
+	width: 80%;
+	max-width: 1200px;
+	margin: 45px auto 55px;
+}
+
+.contactlist li {
+	display: inline-block;
+	width: 25.8%;
+	font-size: 20px;
+	padding: 4% 5%;
+}
+
+.contactlist li:nth-child(1) {
+	padding: 4% 5% 4% 0;
+}
+
+.contactlist li:nth-child(2) {
+	width: calc(23.3% - 4px);
+	border-left: 2px solid #252122;
+	border-right: 2px solid #252122;
+}
+
+.contactlist li div {
+	overflow: auto;
+	position: relative;
+	top: 6px;
+}
+
+.contactlist li div p {
+	float: left;
+}
+
+.contactlist li div a {
+	float: right;
+	display: block;
+    font-family: 'Josefin Semibold';
+	padding: 10px 17px;
+	border: 2px solid #252122;
+}
+
+.contactlist li div a:hover {
+	border-color: #e53b37;
+}
+
+.contactlist li a {
+	color: #252122;
+}
+
+.contactlist li a:hover {
+	color: #e53b37;
+}
+
+@media only screen and (max-width: 760px) {
+	.contactlist {
+		text-align: center;
+	}
+	.contactlist li {
+		display: block;
+		width: 170px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.contactlist li:nth-child(1) {
+		padding: 0 0 25px;
+		border-bottom: 2px solid #252122;
+	}
+	.contactlist li:nth-child(2) {
+		width: 100%;
+		margin: 10% auto;
+		border: none;
+	}
+}

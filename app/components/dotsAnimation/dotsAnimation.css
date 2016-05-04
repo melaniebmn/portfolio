@@ -1,0 +1,83 @@
+.dotsAnimation {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	margin-left: -510px;
+    
+    /*-webkit-animation: dotsAnimation 2s forwards;
+    -moz-animation: dotsAnimation 2s forwards;
+    -ms-animation: dotsAnimation 2s forwards;
+    -o-animation: dotsAnimation 2s forwards;
+    animation: dotsAnimation 2s forwards;*/
+}
+
+/*@-webkit-keyframes dotsAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: auto;
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@-moz-keyframes dotsAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: auto;
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@-ms-keyframes dotsAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: auto;
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@-o-keyframes dotsAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: auto;
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes dotsAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: auto;
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+}*/

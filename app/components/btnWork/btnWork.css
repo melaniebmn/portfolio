@@ -1,0 +1,20 @@
+.btnWork {
+	text-align: center;
+	padding: 50px 0 65px;
+	background: #e53b37;
+}
+
+.btnWork a {
+    font-family: 'Josefin Light';
+	font-size: 40px;
+	font-style: normal;
+	padding: 5px 10px;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+}
+
+.btnWork a:hover {
+	padding: 5px 50px 10px;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}

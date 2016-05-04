@@ -1,0 +1,53 @@
+.projectInfo {
+	overflow: auto;
+	position: relative;
+	width: 65%;
+	max-width: 1000px;
+	margin: -11% auto 0;
+}
+
+.projectInfo article {
+	z-index: 2;
+	float: left;
+	width: 40%;
+	max-width: 290px;
+	padding: 25px;
+	background: #fff;
+}
+
+.projectInfo article p span {
+	display: block;
+	line-height: 1.5;
+	letter-spacing: 1.5px;
+}
+
+.projectInfo ul {
+	float: right;
+	margin: 22% 0 0;
+}
+
+@media only screen and (max-width: 950px) {
+	.projectInfo {
+		margin: 5% auto 0;
+	}
+
+	.projectInfo article,
+	.projectInfo ul {
+		float: none;
+	}
+
+	.projectInfo article {
+		width: calc(100% - 50px);
+		max-width: calc(100% - 50px);
+	}
+
+	.projectInfo ul {
+		margin: 10% auto 0;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.projectInfo {
+		width: 80%;
+	}
+}

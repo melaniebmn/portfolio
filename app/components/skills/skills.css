@@ -1,0 +1,29 @@
+.skills {
+	width: 300px;
+}
+
+.skills li {
+	width: 55%;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+
+.skills li:before  {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	content: '';
+	margin: 0 10px 0 0;
+	border: 4px solid #e53b37;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.skills li:nth-child(odd) {
+	float: right;
+}
+
+.skills li:nth-child(even) {
+	clear: both;
+}

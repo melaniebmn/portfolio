@@ -1,0 +1,131 @@
+.triangleList {
+	width: 515px;
+	height: 660px;
+	margin: 80px auto;
+}
+
+.triangleList li:nth-child(1) {
+	margin-bottom: -8.5%;
+}
+
+.triangleList li a {
+	position: relative;
+	display: block;
+}
+
+.triangleList img {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.triangleList h3 {
+	position: absolute;
+	opacity: 0;
+	font-size: 30px;
+	color: #fff;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.triangleList li:nth-child(1) h3 {
+	top: 20%;
+	left: 10%;
+}
+
+.triangleList li:nth-child(2) h3 {
+	bottom: 20%;
+	right: 10%;
+}
+
+.triangleList a:hover img {
+	-webkit-filter: saturate(2);
+	filter: saturate(2);
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.triangleList a:hover h3 {
+	opacity: 1;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.triangleList li:nth-child(1) a:hover h3 {
+	left: 13%;
+}
+
+.triangleList li:nth-child(2) a:hover h3 {
+	right: 13%;
+}
+
+@media only screen and (max-width: 650px) {
+	.triangleList {
+		width: 80%;
+	}
+	
+	.triangleList img,
+	.triangleList h3 {
+		display: none;
+	}
+
+	.triangleList li a:before {
+		display: block;
+		position: relative;
+		top: 0;
+		content: '';
+		width: 90%;
+		height: 355px;
+	}
+
+	.triangleList li:nth-child(1) a:before {
+		left: 10%;
+		background: bottom right url(../../../public/assets/img/project1-triangles-mobile.png) no-repeat;
+		background-size: 100% auto;
+	}
+
+	.triangleList li:nth-child(2) a:before {
+		left: 0;
+		background: top left url(../../../public/assets/img/project2-triangles-mobile.png) no-repeat;
+		background-size: 100% auto;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.triangleList {
+		height: 565px;
+	}
+
+	.triangleList li a:before {
+		height: 305px;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.triangleList {
+		height: 490px;
+	}
+
+	.triangleList li a:before {
+		height: 260px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.triangleList {
+		height: 405px;
+	}
+
+	.triangleList li a:before {
+		height: 217px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.triangleList {
+		height: 328px;
+	}
+
+	.triangleList li a:before {
+		height: 173px;
+	}
+}

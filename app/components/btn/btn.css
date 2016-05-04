@@ -1,0 +1,26 @@
+.btn {
+	position: relative;
+	display: inline-block;
+}
+
+.btn svg rect {
+	fill: transparent;
+	stroke: #252122;
+	stroke-width: 3px;
+	stroke-dashoffset: 0;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.btn svg rect:hover {
+	-webkit-transition: all .5s;
+	transition: all 1s;
+}
+
+.btn a {
+	position: absolute;
+    font-family: 'Josefin Light';
+    font-size: 20px;
+	letter-spacing: 1px;
+	color: #252122;
+}

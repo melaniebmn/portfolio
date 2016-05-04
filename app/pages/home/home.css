@@ -1,0 +1,121 @@
+.home section {
+	padding: 50px 0 8%;
+}
+
+.home section div {
+	overflow: auto;
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.home section article {
+	text-align: center;
+}
+
+.home section article p {
+	letter-spacing: 2px;
+}
+
+.home section h4 {
+	float: right;
+}
+
+.home section h4 a {
+	top: 11px;
+	left: 15px;
+}
+
+.home section h4 svg rect {
+	stroke: #fff;
+	stroke-dasharray: 340;
+}
+
+.home section h4:hover svg rect {
+	stroke-dashoffset: 679;
+}
+
+.home section:nth-child(1) {
+	position: relative;
+	background: fixed url(../../../public/assets/img/introbg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.home section:nth-child(1):before {
+	position: absolute;
+	top: 8%;
+	margin-top: 150px;
+	content: url(../../../public/assets/img/shapes/double-zigzag.png);
+}
+
+.home section:nth-child(1):after {
+	position: absolute;
+	right: 0;
+	bottom: 4%;
+	margin-bottom: 120px;
+	content: url(../../../public/assets/img/shapes/double-zigzag.png);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.home section:nth-child(1) div {
+	padding: 4% 0;
+}
+
+.home section:nth-child(1) article {
+	z-index: 2;
+	position: relative;
+	max-width: 295px;
+	margin: 20% auto 5%;
+	padding: 30px;
+	background: rgba(255, 255, 255, .5);
+	border: 5px solid #252122;
+}
+
+.home section:nth-child(1) article p {
+	font-size: 28px;
+}
+
+.home section:nth-child(2) {
+	background: fixed url(../../../public/assets/img/workbg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.home section:nth-child(2),
+.home section:nth-child(3),
+.home section h4 a {
+	color: #fff;
+}
+
+.home section:nth-child(3) {
+	background: #e53b37;
+}
+
+.home section:nth-child(3) div {
+	position: relative;
+}
+
+.home section:nth-child(3) article {
+	max-width: 500px;
+	line-height: 2;
+	margin: 100px auto 120px;
+}
+
+@media only screen and (max-width: 810px) {
+	.home section:nth-child(1):before {
+		top: 0;
+		margin-left: -100px;
+	}
+
+	.home section:nth-child(1):after {
+		bottom: -80px;
+		margin-right: -100px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.home section:nth-child(1) article {
+		margin: 35% auto 25%;
+		padding: 45px 30px;
+	}
+}

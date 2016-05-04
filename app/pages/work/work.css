@@ -1,0 +1,46 @@
+.work {
+	padding: 120px 0 0;
+}
+
+.work section {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.work section article {
+	text-align: center;
+	margin: 80px 5%;
+	padding: 50px 0 70px;
+}
+
+.work section article:before,
+.work section article:after {
+	position: absolute;
+	display: block;
+	content: url(../../../public/assets/img/shapes/zigzag.png);
+}
+
+.work section article:before {
+	left: -31px;
+	margin-top: -65px;
+}
+
+.work section article:after {
+	right: -31px;
+	margin-top: 15px;
+}
+
+.work section h4 svg rect {
+	stroke-dasharray: 300;
+}
+
+.work section h4:hover svg rect {
+	stroke: #e53b37;
+	stroke-dashoffset: 600;
+}
+
+.work section h4 a {
+	top: 3px;
+	left: 9px;
+}

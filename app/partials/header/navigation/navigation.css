@@ -1,0 +1,65 @@
+.navigation {
+	float: right;
+	margin: 25px 0 0;
+}
+
+.navigation button {
+	display: none;
+}
+
+.navigation ul li {
+	display: inline;
+}
+
+.navigation ul li:nth-child(2) {
+	margin: 0 60px;
+}
+
+.navigation ul li a {
+	font-family: 'Josefin Light';
+	font-size: 30px;
+	color: #fff;
+	border-bottom: 2px solid transparent;
+}
+
+.navigation ul li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.navigation ul li .active {
+    border-bottom: 2px solid orange;
+}
+
+
+@media only screen and (max-width: 615px) {
+	.navigation button {
+		display: block;
+	}
+
+	.navigation ul {
+		clear: both;
+		width: 0;
+		text-align: right;
+	}
+
+	.navigation ul li {
+		display: block;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		margin: 0 60px;
+	}
+	
+	.navigation:hover ul {
+		width: auto;
+	}
+
+	.navigation:hover ul li {
+		opacity: 1;
+		width: auto;
+		height: auto;
+		margin: 10px 0;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+	}
+}

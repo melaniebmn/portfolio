@@ -1,0 +1,13 @@
+.logo a {
+	float: left;
+	width: 75px;
+	text-indent: -9999px;
+}
+
+.logo a:before {
+	float: left;
+	display: block;
+	content: url(../../../../public/assets/img/logo.png);
+	text-indent: 0;
+	margin-top: 8px;
+}

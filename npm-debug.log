@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/bin/node',
+1 verbose cli   '/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 verbose stack Error: Invalid name: "Portfolio Melanie Bockmann"
+4 verbose stack     at ensureValidName (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:336:15)
+4 verbose stack     at Object.module.exports.fixNameField (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:215:5)
+4 verbose stack     at /Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
+4 verbose stack     at final (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:338:5)
+4 verbose stack     at then (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
+4 verbose stack     at ReadFileContext.<anonymous> (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/read-package-json/read-json.js:284:20)
+4 verbose stack     at ReadFileContext.callback (/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16)
+4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:324:13)
+5 verbose cwd /Users/melanieboeckmann/Desktop/projects/pf/root2
+6 error Darwin 14.5.0
+7 error argv "/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/bin/node" "/Users/melanieboeckmann/.nvm/versions/node/v5.10.1/bin/npm" "start"
+8 error node v5.10.1
+9 error npm  v3.8.3
+10 error Invalid name: "Portfolio Melanie Bockmann"
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

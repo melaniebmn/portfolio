@@ -1,0 +1,12 @@
+.heading {
+    font-family: 'Josefin Thin';
+	font-size: 40px;
+	letter-spacing: 2px;
+	line-height: 1;
+}
+
+.heading strong {
+    font-family: 'Josefin Semibold';
+	font-size: 100px;
+	line-height: 0.2;
+}

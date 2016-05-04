@@ -1,0 +1,48 @@
+.aboutText {
+	overflow: auto;
+	max-width: 900px;
+	margin: 60px auto 80px;
+}
+
+.aboutText li {
+	float: left;
+	display: block;
+	width: 130px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.aboutText li:nth-child(2) {
+	width: calc(75% - 262px);
+	font-size: 25px;
+	letter-spacing: 3px;
+	margin: 90px 10% 0 15%;
+}
+
+.aboutText li:nth-child(3) {
+	line-height: 1.5;
+	margin: 40px 0 0;
+}
+
+@media only screen and (max-width: 880px) {
+	.aboutText li:nth-child(2) {
+		width: calc(80% - 262px);
+		margin: 90px 10% 0;	
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.aboutText li {
+		float: none;
+	}
+	.aboutText li:nth-child(1) {
+		margin: 0 auto 0 5%;
+	}
+	.aboutText li:nth-child(2) {
+		width: 85%;
+		margin: 30px 0 0 15%;	
+	}
+	.aboutText li:nth-child(3) {
+		margin: 40px 5% 0 auto;	
+	}
+}

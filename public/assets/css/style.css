@@ -1,0 +1,35 @@
+@import '../fonts/fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+body {
+    font-family: 'Josefin Regular';
+    color: #252122;
+    -webkit-appearance: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+button {
+    outline: none;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+.Navigation__navigation___2_8kQ ul li .active {
+    border-bottom: 2px solid #fff;
+}

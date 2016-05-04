@@ -1,0 +1,102 @@
+.project {
+	padding: 120px 0 0;
+}
+
+.project header {
+	position: relative;
+	padding: 0 0 80px;
+}
+
+.project header h2 {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.project header:after {
+	z-index: 1;
+	position: absolute;
+	left: -110px;
+	bottom: -20px;
+	content: url(../../../public/assets/img/shapes/zigzag.png);
+}
+
+.project section:nth-child(2) {
+	position: relative;
+	padding: 70px 0 7%;
+	background: #f3f3f3;
+}
+
+.project section:nth-child(2) aside {
+	width: 74%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 3%;
+	background: #fff;
+}
+
+.project section:nth-child(2) aside img {
+	width: 100%;
+}
+
+.project section:nth-child(3) {
+	margin: 8% auto;
+}
+
+.project section:nth-child(3) nav {
+	overflow: auto;
+	width: 80%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.project section:nth-child(3) nav h4:nth-child(1) {
+	float: left;
+}
+
+.project section:nth-child(3) nav h4:nth-child(2) {
+	float: right;
+}
+
+.project section:nth-child(3) nav h4 svg rect {
+	stroke-dasharray: 440;
+	stroke-dashoffset: 0;
+}
+
+.project section:nth-child(3) nav h4:hover svg rect {
+	stroke-dashoffset: 880;
+	stroke: #e53b37;
+}
+
+.project section:nth-child(3) nav a {
+	top: 12px;
+	left: 13px;
+}
+
+.project section:nth-child(4) {
+	background: #252122;
+}
+
+@media only screen and (max-width: 500px) {
+	.project header {
+		padding: 0 0 40px;
+	}
+
+	.project header h2 {
+		line-height: 1.5;
+	}
+
+	.project section:nth-child(3) nav {
+		width: 170px;
+	}
+
+	.project section:nth-child(3) nav h4:nth-child(1),
+	.project section:nth-child(3) nav h4:nth-child(2) {
+		float: none;
+		display: block;
+	}
+
+	.project section:nth-child(3) nav h4:nth-child(1) {
+		margin: 0 0 25px;
+	}
+}
