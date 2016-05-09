@@ -36,8 +36,9 @@
 }
 
 .home section:nth-child(1) {
+	z-index: 10;
 	position: relative;
-	background: fixed url(../../../public/assets/img/introbg.jpg) no-repeat;
+	background: fixed url(/assets/img/introbg.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -45,7 +46,7 @@
 	position: absolute;
 	top: 8%;
 	margin-top: 150px;
-	content: url(../../../public/assets/img/shapes/double-zigzag.png);
+	content: url(/assets/img/shapes/double-zigzag.png);
 }
 
 .home section:nth-child(1):after {
@@ -53,20 +54,20 @@
 	right: 0;
 	bottom: 4%;
 	margin-bottom: 120px;
-	content: url(../../../public/assets/img/shapes/double-zigzag.png);
+	content: url(/assets/img/shapes/double-zigzag.png);
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 
 .home section:nth-child(1) div {
-	padding: 4% 0;
+	padding: 4% 0 8%;
 }
 
 .home section:nth-child(1) article {
 	z-index: 2;
 	position: relative;
 	max-width: 295px;
-	margin: 20% auto 5%;
+	margin: 15% auto 5%;
 	padding: 30px;
 	background: rgba(255, 255, 255, .5);
 	border: 5px solid #252122;
@@ -77,7 +78,7 @@
 }
 
 .home section:nth-child(2) {
-	background: fixed url(../../../public/assets/img/workbg.jpg) no-repeat;
+	background: fixed url(/assets/img/workbg.jpg) no-repeat;
 	background-size: cover;
 }
 

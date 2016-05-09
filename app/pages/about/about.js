@@ -1,5 +1,3 @@
-import ImgSrc from './../../../public/assets/img/skillset.png';
-
 import styles from './About.css';
 
 import React from 'react';
@@ -22,7 +20,7 @@ export default class About extends React.Component {
 				</section>
 				<section>
 					<Heading capitalLetter={'m'} heading={'ountain of experience'} />
-					<img src={ImgSrc} alt='Skillset'/>
+					<img src="assets/img/skillset.png" alt='Skillset'/>
 				</section>
 				<BtnWork />
 			</main>

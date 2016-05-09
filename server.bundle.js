@@ -87,7 +87,6 @@
 	    } else if (redirect) {
 	      res.redirect(redirect.pathname + redirect.search);
 	    } else if (props) {
-	      // hey we made it!
 	      var appHtml = (0, _server.renderToString)(_react2.default.createElement(_reactRouter.RouterContext, props));
 	      res.send(renderPage(appHtml));
 	    } else {
@@ -97,7 +96,7 @@
 	});
 
 	function renderPage(appHtml) {
-	  return '\n    <!doctype html public="storage">\n    <html>\n    <meta charset=utf-8/>\n    <title>My First React Router App</title>\n    <link rel=stylesheet href=/index.css>\n    <div id=app>' + appHtml + '</div>\n    <script src="/bundle.js"></script>\n   ';
+	  return '\n    <!doctype html public="storage">\n    <html>\n      <meta charset="UTF-8">\n      <title>Portfolio | Melanie Bockmann Test</title>\n      <meta name="description" content="Hey, my name is Melanie, I\'m a Front-End Developer based in Vancouver, BC. This porfolio sites showcases some of my work." />\n      <meta name="keywords" content="melanie bockmann, front-end developer, web development vancouver, front-end vancouver, frontend vancouver" />\n\n      <meta name="viewport" content="width=device-width, initial-scale=1">\n      <link rel="stylesheet" type="text/css" href="assets/css/style.css">\n      <link rel="stylesheet" type="text/css" href="style.css">\n      \n      <div id=app>' + appHtml + '</div>\n      <script src="bundle.js"></script>\n   ';
 	}
 
 	var PORT = process.env.PORT || 8080;
@@ -158,29 +157,29 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Home = __webpack_require__(19);
+	var _Home = __webpack_require__(18);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Layout = __webpack_require__(29);
+	var _Layout = __webpack_require__(26);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _Project = __webpack_require__(51);
+	var _Project = __webpack_require__(48);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Project3 = __webpack_require__(63);
+	var _Project3 = __webpack_require__(58);
 
 	var _Project4 = _interopRequireDefault(_Project3);
 
-	var _Work = __webpack_require__(45);
+	var _Work = __webpack_require__(42);
 
 	var _Work2 = _interopRequireDefault(_Work);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	module.exports(_react2.default.createElement(
+	module.exports = _react2.default.createElement(
 		_reactRouter.Route,
 		{ path: '/', component: _Layout2.default },
 		_react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
@@ -188,7 +187,7 @@
 		_react2.default.createElement(_reactRouter.Route, { path: 'project1', name: 'project1', component: _Project2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: 'project2', name: 'project2', component: _Project4.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: 'work', name: 'work', component: _Work2.default })
-	));
+	);
 
 /***/ },
 /* 8 */
@@ -202,11 +201,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _skillset = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/skillset.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _skillset2 = _interopRequireDefault(_skillset);
-
-	var _About = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./About.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _About = __webpack_require__(9);
 
 	var _About2 = _interopRequireDefault(_About);
 
@@ -214,19 +209,19 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _AboutText = __webpack_require__(11);
+	var _AboutText = __webpack_require__(10);
 
 	var _AboutText2 = _interopRequireDefault(_AboutText);
 
-	var _btnWork = __webpack_require__(13);
+	var _btnWork = __webpack_require__(12);
 
 	var _btnWork2 = _interopRequireDefault(_btnWork);
 
-	var _Description = __webpack_require__(15);
+	var _Description = __webpack_require__(14);
 
 	var _Description2 = _interopRequireDefault(_Description);
 
-	var _Heading = __webpack_require__(17);
+	var _Heading = __webpack_require__(16);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
@@ -268,7 +263,7 @@
 						'section',
 						null,
 						_react2.default.createElement(_Heading2.default, { capitalLetter: 'm', heading: 'ountain of experience' }),
-						_react2.default.createElement('img', { src: _skillset2.default, alt: 'Skillset' })
+						_react2.default.createElement('img', { src: 'assets/img/skillset.png', alt: 'Skillset' })
 					),
 					_react2.default.createElement(_btnWork2.default, null)
 				);
@@ -281,9 +276,14 @@
 	exports.default = About;
 
 /***/ },
-/* 9 */,
-/* 10 */,
-/* 11 */
+/* 9 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"about":"About__about___10pTh"};
+
+/***/ },
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -294,7 +294,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _aboutText = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./aboutText.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _aboutText = __webpack_require__(11);
 
 	var _aboutText2 = _interopRequireDefault(_aboutText);
 
@@ -352,8 +352,14 @@
 	exports.default = AboutText;
 
 /***/ },
-/* 12 */,
-/* 13 */
+/* 11 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"aboutText":"aboutText__aboutText___1QIXm"};
+
+/***/ },
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -364,7 +370,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _btnWork = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./btnWork.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _btnWork = __webpack_require__(13);
 
 	var _btnWork2 = _interopRequireDefault(_btnWork);
 
@@ -410,8 +416,14 @@
 	exports.default = btnWork;
 
 /***/ },
-/* 14 */,
-/* 15 */
+/* 13 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"btnWork":"btnWork__btnWork___e2X4C"};
+
+/***/ },
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -422,7 +434,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Description = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Description.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Description = __webpack_require__(15);
 
 	var _Description2 = _interopRequireDefault(_Description);
 
@@ -468,8 +480,14 @@
 	exports.default = Description;
 
 /***/ },
-/* 16 */,
-/* 17 */
+/* 15 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"description":"Description__description___1Kyvp"};
+
+/***/ },
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -480,7 +498,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Heading = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Heading.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Heading = __webpack_require__(17);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
@@ -527,8 +545,14 @@
 	exports.default = Heading;
 
 /***/ },
-/* 18 */,
-/* 19 */
+/* 17 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"heading":"Heading__heading___3GmR5"};
+
+/***/ },
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -539,7 +563,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Home = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Home.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Home = __webpack_require__(19);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -547,23 +571,23 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Btn = __webpack_require__(21);
+	var _Btn = __webpack_require__(20);
 
 	var _Btn2 = _interopRequireDefault(_Btn);
 
-	var _Description = __webpack_require__(15);
+	var _Description = __webpack_require__(14);
 
 	var _Description2 = _interopRequireDefault(_Description);
 
-	var _DotsAnimation = __webpack_require__(23);
+	var _DotsAnimation = __webpack_require__(22);
 
 	var _DotsAnimation2 = _interopRequireDefault(_DotsAnimation);
 
-	var _Heading = __webpack_require__(17);
+	var _Heading = __webpack_require__(16);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
-	var _TriangleList = __webpack_require__(25);
+	var _TriangleList = __webpack_require__(24);
 
 	var _TriangleList2 = _interopRequireDefault(_TriangleList);
 
@@ -633,8 +657,14 @@
 	exports.default = Home;
 
 /***/ },
-/* 20 */,
-/* 21 */
+/* 19 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"home":"Home__home___1eg0Z"};
+
+/***/ },
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -647,7 +677,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Btn = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Btn.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Btn = __webpack_require__(21);
 
 	var _Btn2 = _interopRequireDefault(_Btn);
 
@@ -734,8 +764,14 @@
 	exports.default = BtnLink;
 
 /***/ },
-/* 22 */,
-/* 23 */
+/* 21 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"btn":"Btn__btn___2bmiJ"};
+
+/***/ },
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -746,7 +782,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _DotsAnimation = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./DotsAnimation.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _DotsAnimation = __webpack_require__(23);
 
 	var _DotsAnimation2 = _interopRequireDefault(_DotsAnimation);
 
@@ -969,8 +1005,14 @@
 	exports.default = DotsAnimation;
 
 /***/ },
-/* 24 */,
-/* 25 */
+/* 23 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"dotsAnimation":"DotsAnimation__dotsAnimation___3GqBv"};
+
+/***/ },
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -981,15 +1023,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _project1Triangles = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/project1-triangles.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _project1Triangles2 = _interopRequireDefault(_project1Triangles);
-
-	var _project2Triangles = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/project2-triangles.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _project2Triangles2 = _interopRequireDefault(_project2Triangles);
-
-	var _TriangleList = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./TriangleList.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _TriangleList = __webpack_require__(25);
 
 	var _TriangleList2 = _interopRequireDefault(_TriangleList);
 
@@ -1026,7 +1060,7 @@
 						_react2.default.createElement(
 							'a',
 							{ href: '/project1' },
-							_react2.default.createElement('img', { src: _project1Triangles2.default }),
+							_react2.default.createElement('img', { src: 'assets/img-loaders/project1-triangles.png' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -1040,7 +1074,7 @@
 						_react2.default.createElement(
 							'a',
 							{ href: '/project2' },
-							_react2.default.createElement('img', { src: _project2Triangles2.default }),
+							_react2.default.createElement('img', { src: 'assets/img-loaders/project2-triangles.png' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -1058,10 +1092,14 @@
 	exports.default = triangleList;
 
 /***/ },
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */
+/* 25 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"triangleList":"TriangleList__triangleList___WwsC8"};
+
+/***/ },
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1078,15 +1116,15 @@
 
 	var _reactRouter = __webpack_require__(6);
 
-	var _Footer = __webpack_require__(30);
+	var _Footer = __webpack_require__(27);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _Header = __webpack_require__(36);
+	var _Header = __webpack_require__(33);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Work = __webpack_require__(45);
+	var _Work = __webpack_require__(42);
 
 	var _Work2 = _interopRequireDefault(_Work);
 
@@ -1126,7 +1164,7 @@
 	exports.default = Layout;
 
 /***/ },
-/* 30 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1137,7 +1175,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Footer = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Footer.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Footer = __webpack_require__(28);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -1145,11 +1183,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ContactList = __webpack_require__(32);
+	var _ContactList = __webpack_require__(29);
 
 	var _ContactList2 = _interopRequireDefault(_ContactList);
 
-	var _Copyright = __webpack_require__(34);
+	var _Copyright = __webpack_require__(31);
 
 	var _Copyright2 = _interopRequireDefault(_Copyright);
 
@@ -1188,8 +1226,14 @@
 	exports.default = Footer;
 
 /***/ },
-/* 31 */,
-/* 32 */
+/* 28 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"footer":"Footer__footer___p8Mlr"};
+
+/***/ },
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1200,7 +1244,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Contactlist = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Contactlist.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Contactlist = __webpack_require__(30);
 
 	var _Contactlist2 = _interopRequireDefault(_Contactlist);
 
@@ -1208,7 +1252,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Heading = __webpack_require__(17);
+	var _Heading = __webpack_require__(16);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
@@ -1286,8 +1330,14 @@
 	exports.default = ContactList;
 
 /***/ },
-/* 33 */,
-/* 34 */
+/* 30 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"contactlist":"Contactlist__contactlist___2zamR"};
+
+/***/ },
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1298,7 +1348,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Copyright = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Copyright.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Copyright = __webpack_require__(32);
 
 	var _Copyright2 = _interopRequireDefault(_Copyright);
 
@@ -1340,8 +1390,14 @@
 	exports.default = Copyright;
 
 /***/ },
-/* 35 */,
-/* 36 */
+/* 32 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"copyright":"Copyright__copyright___UiYaD"};
+
+/***/ },
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1352,7 +1408,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Header = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Header.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Header = __webpack_require__(34);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -1362,11 +1418,11 @@
 
 	var _reactRouter = __webpack_require__(6);
 
-	var _Logo = __webpack_require__(38);
+	var _Logo = __webpack_require__(35);
 
 	var _Logo2 = _interopRequireDefault(_Logo);
 
-	var _Navigation = __webpack_require__(40);
+	var _Navigation = __webpack_require__(37);
 
 	var _Navigation2 = _interopRequireDefault(_Navigation);
 
@@ -1409,8 +1465,14 @@
 	exports.default = Header;
 
 /***/ },
-/* 37 */,
-/* 38 */
+/* 34 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"header":"Header__header___wIF4G"};
+
+/***/ },
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1421,7 +1483,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Logo = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Logo.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Logo = __webpack_require__(36);
 
 	var _Logo2 = _interopRequireDefault(_Logo);
 
@@ -1467,8 +1529,14 @@
 	exports.default = Logo;
 
 /***/ },
-/* 39 */,
-/* 40 */
+/* 36 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"logo":"Logo__logo___20AFc"};
+
+/***/ },
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1479,7 +1547,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Navigation = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Navigation.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Navigation = __webpack_require__(38);
 
 	var _Navigation2 = _interopRequireDefault(_Navigation);
 
@@ -1489,11 +1557,11 @@
 
 	var _reactRouter = __webpack_require__(6);
 
-	var _MenuBtn = __webpack_require__(42);
+	var _MenuBtn = __webpack_require__(39);
 
 	var _MenuBtn2 = _interopRequireDefault(_MenuBtn);
 
-	var _NavLink = __webpack_require__(44);
+	var _NavLink = __webpack_require__(41);
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
@@ -1562,8 +1630,14 @@
 	exports.default = Navigation;
 
 /***/ },
-/* 41 */,
-/* 42 */
+/* 38 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"navigation":"Navigation__navigation___2_8kQ","active":"Navigation__active___1w8qs"};
+
+/***/ },
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1574,7 +1648,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _MenuBtn = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./MenuBtn.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _MenuBtn = __webpack_require__(40);
 
 	var _MenuBtn2 = _interopRequireDefault(_MenuBtn);
 
@@ -1616,8 +1690,14 @@
 	exports.default = MenuBtn;
 
 /***/ },
-/* 43 */,
-/* 44 */
+/* 40 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"menuBtn":"MenuBtn__menuBtn___36ybM"};
+
+/***/ },
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1666,7 +1746,7 @@
 	exports.default = NavLink;
 
 /***/ },
-/* 45 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1677,7 +1757,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Work = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Work.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Work = __webpack_require__(43);
 
 	var _Work2 = _interopRequireDefault(_Work);
 
@@ -1685,19 +1765,19 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _btnWork = __webpack_require__(13);
+	var _btnWork = __webpack_require__(12);
 
 	var _btnWork2 = _interopRequireDefault(_btnWork);
 
-	var _Description = __webpack_require__(15);
+	var _Description = __webpack_require__(14);
 
 	var _Description2 = _interopRequireDefault(_Description);
 
-	var _Heading = __webpack_require__(17);
+	var _Heading = __webpack_require__(16);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
-	var _ProjectList = __webpack_require__(47);
+	var _ProjectList = __webpack_require__(44);
 
 	var _ProjectList2 = _interopRequireDefault(_ProjectList);
 
@@ -1746,8 +1826,14 @@
 	exports.default = Work;
 
 /***/ },
-/* 46 */,
-/* 47 */
+/* 43 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"work":"Work__work___GuMmi"};
+
+/***/ },
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1758,7 +1844,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _ProjectList = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./ProjectList.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _ProjectList = __webpack_require__(45);
 
 	var _ProjectList2 = _interopRequireDefault(_ProjectList);
 
@@ -1766,7 +1852,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ProjectListBtn = __webpack_require__(49);
+	var _ProjectListBtn = __webpack_require__(46);
 
 	var _ProjectListBtn2 = _interopRequireDefault(_ProjectListBtn);
 
@@ -1813,8 +1899,14 @@
 	exports.default = ProjectList;
 
 /***/ },
-/* 48 */,
-/* 49 */
+/* 45 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"projectList":"ProjectList__projectList___36SNf"};
+
+/***/ },
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1825,7 +1917,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _ProjectListBtn = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./ProjectListBtn.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _ProjectListBtn = __webpack_require__(47);
 
 	var _ProjectListBtn2 = _interopRequireDefault(_ProjectListBtn);
 
@@ -1833,7 +1925,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Btn = __webpack_require__(21);
+	var _Btn = __webpack_require__(20);
 
 	var _Btn2 = _interopRequireDefault(_Btn);
 
@@ -1876,8 +1968,14 @@
 	exports.default = ProjectListBtn;
 
 /***/ },
-/* 50 */,
-/* 51 */
+/* 47 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"projectListBtn":"ProjectListBtn__projectListBtn___160sR"};
+
+/***/ },
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1888,15 +1986,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _project1Cover = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/project1-cover.jpg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _project1Cover2 = _interopRequireDefault(_project1Cover);
-
-	var _project1Mockups = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/project1-mockups.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _project1Mockups2 = _interopRequireDefault(_project1Mockups);
-
-	var _Project = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Project.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Project = __webpack_require__(49);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
@@ -1904,27 +1994,27 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Btn = __webpack_require__(21);
+	var _Btn = __webpack_require__(20);
 
 	var _Btn2 = _interopRequireDefault(_Btn);
 
-	var _btnWork = __webpack_require__(13);
+	var _btnWork = __webpack_require__(12);
 
 	var _btnWork2 = _interopRequireDefault(_btnWork);
 
-	var _Heading = __webpack_require__(17);
+	var _Heading = __webpack_require__(16);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
-	var _Mockups = __webpack_require__(55);
+	var _Mockups = __webpack_require__(50);
 
 	var _Mockups2 = _interopRequireDefault(_Mockups);
 
-	var _PrevNextBtns = __webpack_require__(57);
+	var _PrevNextBtns = __webpack_require__(52);
 
 	var _PrevNextBtns2 = _interopRequireDefault(_PrevNextBtns);
 
-	var _ProjectInfo = __webpack_require__(59);
+	var _ProjectInfo = __webpack_require__(54);
 
 	var _ProjectInfo2 = _interopRequireDefault(_ProjectInfo);
 
@@ -1962,7 +2052,7 @@
 						_react2.default.createElement(
 							'aside',
 							null,
-							_react2.default.createElement('img', { src: _project1Cover2.default })
+							_react2.default.createElement('img', { src: 'assets/img/project1-cover.jpg' })
 						),
 						_react2.default.createElement(_ProjectInfo2.default, {
 							text: ['Peak Trails is a website about hiking trails in and around Vancouver.', _react2.default.createElement('br', null), 'It shows you available trails and gives you a variety of information about each trail.', _react2.default.createElement('br', null), 'The project is a Wordpress theme and all the CSS is done with Less. I did all the UI/UX and icons as well for this project.'],
@@ -1971,7 +2061,7 @@
 					_react2.default.createElement(
 						'section',
 						null,
-						_react2.default.createElement(_Mockups2.default, { src: _project1Mockups2.default }),
+						_react2.default.createElement(_Mockups2.default, { src: 'assets/img/project1-mockups.png' }),
 						_react2.default.createElement(
 							'nav',
 							null,
@@ -1995,10 +2085,14 @@
 	exports.default = Project1;
 
 /***/ },
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */
+/* 49 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"project":"Project__project___P2k8t"};
+
+/***/ },
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2009,7 +2103,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Mockups = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Mockups.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Mockups = __webpack_require__(51);
 
 	var _Mockups2 = _interopRequireDefault(_Mockups);
 
@@ -2047,8 +2141,14 @@
 	exports.default = Mockups;
 
 /***/ },
-/* 56 */,
-/* 57 */
+/* 51 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"mockups":"Mockups__mockups___2fr6H"};
+
+/***/ },
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2059,7 +2159,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _PrevNextBtns = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./PrevNextBtns.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _PrevNextBtns = __webpack_require__(53);
 
 	var _PrevNextBtns2 = _interopRequireDefault(_PrevNextBtns);
 
@@ -2118,8 +2218,14 @@
 	exports.default = PrevNextBtns;
 
 /***/ },
-/* 58 */,
-/* 59 */
+/* 53 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"prevNextBtns":"PrevNextBtns__prevNextBtns___3Ga6M"};
+
+/***/ },
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2130,7 +2236,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _ProjectInfo = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./ProjectInfo.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _ProjectInfo = __webpack_require__(55);
 
 	var _ProjectInfo2 = _interopRequireDefault(_ProjectInfo);
 
@@ -2138,11 +2244,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Description = __webpack_require__(15);
+	var _Description = __webpack_require__(14);
 
 	var _Description2 = _interopRequireDefault(_Description);
 
-	var _Skills = __webpack_require__(61);
+	var _Skills = __webpack_require__(56);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
@@ -2181,8 +2287,14 @@
 	exports.default = ProjectInfo;
 
 /***/ },
-/* 60 */,
-/* 61 */
+/* 55 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"projectInfo":"ProjectInfo__projectInfo___hGAqd"};
+
+/***/ },
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2193,7 +2305,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Skills = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Skills.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Skills = __webpack_require__(57);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
@@ -2264,8 +2376,14 @@
 	exports.default = Skills;
 
 /***/ },
-/* 62 */,
-/* 63 */
+/* 57 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"skills":"Skills__skills___6nLCa"};
+
+/***/ },
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2276,15 +2394,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _project2Cover = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/project2-cover.jpg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _project2Cover2 = _interopRequireDefault(_project2Cover);
-
-	var _project2Mockups = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../../public/assets/img/project2-mockups.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _project2Mockups2 = _interopRequireDefault(_project2Mockups);
-
-	var _Project = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./Project.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _Project = __webpack_require__(49);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
@@ -2292,27 +2402,27 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Btn = __webpack_require__(21);
+	var _Btn = __webpack_require__(20);
 
 	var _Btn2 = _interopRequireDefault(_Btn);
 
-	var _btnWork = __webpack_require__(13);
+	var _btnWork = __webpack_require__(12);
 
 	var _btnWork2 = _interopRequireDefault(_btnWork);
 
-	var _Heading = __webpack_require__(17);
+	var _Heading = __webpack_require__(16);
 
 	var _Heading2 = _interopRequireDefault(_Heading);
 
-	var _Mockups = __webpack_require__(55);
+	var _Mockups = __webpack_require__(50);
 
 	var _Mockups2 = _interopRequireDefault(_Mockups);
 
-	var _PrevNextBtns = __webpack_require__(57);
+	var _PrevNextBtns = __webpack_require__(52);
 
 	var _PrevNextBtns2 = _interopRequireDefault(_PrevNextBtns);
 
-	var _ProjectInfo = __webpack_require__(59);
+	var _ProjectInfo = __webpack_require__(54);
 
 	var _ProjectInfo2 = _interopRequireDefault(_ProjectInfo);
 
@@ -2350,7 +2460,7 @@
 						_react2.default.createElement(
 							'aside',
 							null,
-							_react2.default.createElement('img', { src: _project2Cover2.default })
+							_react2.default.createElement('img', { src: 'assets/img/project2-cover.jpg' })
 						),
 						_react2.default.createElement(_ProjectInfo2.default, {
 							text: ['Peak Trails is a website about hiking trails in and around Vancouver.', _react2.default.createElement('br', null), 'It shows you available trails and gives you a variety of information about each trail.', _react2.default.createElement('br', null), 'The project is a Wordpress theme and all the CSS is done with Less. I did all the UI/UX and icons as well for this project.'],
@@ -2359,7 +2469,7 @@
 					_react2.default.createElement(
 						'section',
 						null,
-						_react2.default.createElement(_Mockups2.default, { src: _project2Mockups2.default }),
+						_react2.default.createElement(_Mockups2.default, { src: 'assets/img/project2-mockups.png' }),
 						_react2.default.createElement(
 							'nav',
 							null,

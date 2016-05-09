@@ -1,6 +1,3 @@
-import ImgSrc from './../../../public/assets/img/project1-cover.jpg';
-import MockupSrc from './../../../public/assets/img/project1-mockups.png';
-
 import styles from './Project.css';
 
 import React from 'react';
@@ -21,14 +18,14 @@ export default class Project1 extends React.Component {
 				</header>
 				<section>
 					<aside>
-						<img src={ImgSrc} />
+						<img src="assets/img/project1-cover.jpg" />
 					</aside>
 					<ProjectInfo 
 						text={['Peak Trails is a website about hiking trails in and around Vancouver.', <br/>, 'It shows you available trails and gives you a variety of information about each trail.', <br/>, 'The project is a Wordpress theme and all the CSS is done with Less. I did all the UI/UX and icons as well for this project.']}
 						skill1={'Wordpress'} skill2={'HTML5'} skill3={'CSS3 (Less)'} skill4={'PHP'} skill5={'Javascript'} skill6={'PS + AI'} />
 				</section>
 				<section>
-					<Mockups src={MockupSrc} />
+					<Mockups src="assets/img/project1-mockups.png" />
 					<nav>
 						<BtnLink width="170" height="50" btnLabel={'View Live Demo'} link={'http://www.w3.org/2000/svg'} target={'_blank'} />
 						<BtnLink width="170" height="50" btnLabel={'See Github Repo'} link={'https://github.com/melaniebmn/peaktrails'} target={'_blank'} />

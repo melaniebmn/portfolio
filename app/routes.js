@@ -8,7 +8,7 @@ import Project1 from './pages/project/Project1';
 import Project2 from './pages/project/Project2';
 import Work from './pages/work/Work';
 
-module.exports(
+module.exports = (
 	<Route path="/" component={Layout}>
 		<IndexRoute component={Home}></IndexRoute>
 		<Route path='about' name='about' component={About}></Route>

@@ -26,7 +26,7 @@
 	position: absolute;
 	top: 10px;
 	left: -150px;
-	content: url(../../../public/assets/img/profile.png);
+	content: url(/assets/img/profile.png);
 }
 
 .about section article p {
@@ -44,7 +44,7 @@
 	position: absolute;
 	left: 0;
 	margin-top: -10.5%;
-	content: url(../../../public/assets/img/shapes/zigzag-black.png);
+	content: url(/assets/img/shapes/zigzag-black.png);
 }
 
 .about section:nth-child(3) img {
@@ -59,7 +59,7 @@
 	.about section article:before {
 		top: 20px;
 		left: -100px;
-		content: url(../../../public/assets/img/profile-mobile.png);
+		content: url(/assets/img/profile-mobile.png);
 	}
 	.about section:nth-child(3):before {
 		margin-top: -16%;

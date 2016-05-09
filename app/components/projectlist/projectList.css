@@ -10,11 +10,11 @@
 }
 
 .projectList li:nth-child(1) {
-	background: url(../../../public/assets/img/project1-cover.jpg);
+	background: url(/assets/img/project1-cover.jpg);
 }
 
 .projectList li:nth-child(2) {
-	background: url(../../../public/assets/img/project2-cover.jpg);
+	background: url(/assets/img/project2-cover.jpg);
 }
 
 .projectList li:last-child {

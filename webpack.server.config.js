@@ -1,5 +1,6 @@
-var fs = require('fs')
-var path = require('path')
+var fs = require('fs');
+var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, 'server.js'),
@@ -26,6 +27,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('/public/style.css', { allChunks: true })
+    new ExtractTextPlugin('./public/style.css', { allChunks: true })
   ]
 }

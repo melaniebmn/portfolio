@@ -18,7 +18,7 @@
 .work section article:after {
 	position: absolute;
 	display: block;
-	content: url(../../../public/assets/img/shapes/zigzag.png);
+	content: url(/assets/img/shapes/zigzag.png);
 }
 
 .work section article:before {
