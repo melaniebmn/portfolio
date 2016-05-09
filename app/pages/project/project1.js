@@ -27,8 +27,8 @@ export default class Project1 extends React.Component {
 				<section>
 					<Mockups src="assets/img/project1-mockups.png" />
 					<nav>
-						<BtnLink width="170" height="50" btnLabel={'View Live Demo'} link={'http://www.w3.org/2000/svg'} target={'_blank'} />
-						<BtnLink width="170" height="50" btnLabel={'See Github Repo'} link={'https://github.com/melaniebmn/peaktrails'} target={'_blank'} />
+						<BtnLink width="170" height="50" btnLabel={'View Live Demo'} link={'//peaktrails.mbockmann.com/'} target={'_blank'} />
+						<BtnLink width="170" height="50" btnLabel={'See Github Repo'} link={'//github.com/melaniebmn/peaktrails'} target={'_blank'} />
 					</nav>
 				</section>
 				<section>
