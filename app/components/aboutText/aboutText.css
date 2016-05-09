@@ -7,16 +7,20 @@
 .aboutText li {
 	float: left;
 	display: block;
-	width: 130px;
+	width: 165px;
 	font-size: 16px;
 	letter-spacing: 2px;
 }
 
+.aboutText li:nth-child(1) {
+	line-height: 1.8;
+}
+
 .aboutText li:nth-child(2) {
-	width: calc(75% - 262px);
+	width: calc(80% - 330px);
 	font-size: 25px;
 	letter-spacing: 3px;
-	margin: 90px 10% 0 15%;
+	margin: 90px 7.5% 0 12.5%;
 }
 
 .aboutText li:nth-child(3) {
@@ -24,14 +28,7 @@
 	margin: 40px 0 0;
 }
 
-@media only screen and (max-width: 880px) {
-	.aboutText li:nth-child(2) {
-		width: calc(80% - 262px);
-		margin: 90px 10% 0;	
-	}
-}
-
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 820px) {
 	.aboutText li {
 		float: none;
 	}
