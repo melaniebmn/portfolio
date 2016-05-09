@@ -85,16 +85,20 @@
 .aboutText__aboutText___1QIXm li {
 	float: left;
 	display: block;
-	width: 130px;
+	width: 165px;
 	font-size: 16px;
 	letter-spacing: 2px;
 }
 
+.aboutText__aboutText___1QIXm li:nth-child(1) {
+	line-height: 1.8;
+}
+
 .aboutText__aboutText___1QIXm li:nth-child(2) {
-	width: calc(75% - 262px);
+	width: calc(80% - 330px);
 	font-size: 25px;
 	letter-spacing: 3px;
-	margin: 90px 10% 0 15%;
+	margin: 90px 7.5% 0 12.5%;
 }
 
 .aboutText__aboutText___1QIXm li:nth-child(3) {
@@ -102,14 +106,7 @@
 	margin: 40px 0 0;
 }
 
-@media only screen and (max-width: 880px) {
-	.aboutText__aboutText___1QIXm li:nth-child(2) {
-		width: calc(80% - 262px);
-		margin: 90px 10% 0;	
-	}
-}
-
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 820px) {
 	.aboutText__aboutText___1QIXm li {
 		float: none;
 	}
@@ -308,83 +305,7 @@
 	left: 50%;
 	height: 100%;
 	margin-left: -510px;
-    
-    /*-webkit-animation: dotsAnimation 2s forwards;
-    -moz-animation: dotsAnimation 2s forwards;
-    -ms-animation: dotsAnimation 2s forwards;
-    -o-animation: dotsAnimation 2s forwards;
-    animation: dotsAnimation 2s forwards;*/
-}
-
-/*@-webkit-keyframes dotsAnimation {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    50% {
-        width: auto;
-        height: 50%;
-    }
-    100% {
-        height: 100%;
-    }
-}
-
-@-moz-keyframes dotsAnimation {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    50% {
-        width: auto;
-        height: 50%;
-    }
-    100% {
-        height: 100%;
-    }
-}
-
-@-ms-keyframes dotsAnimation {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    50% {
-        width: auto;
-        height: 50%;
-    }
-    100% {
-        height: 100%;
-    }
-}
-
-@-o-keyframes dotsAnimation {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    50% {
-        width: auto;
-        height: 50%;
-    }
-    100% {
-        height: 100%;
-    }
-}
-
-@keyframes dotsAnimation {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    50% {
-        width: auto;
-        height: 50%;
-    }
-    100% {
-        height: 100%;
-    }
-}*/.TriangleList__triangleList___WwsC8 {
+}.TriangleList__triangleList___WwsC8 {
 	width: 515px;
 	height: 660px;
 	margin: 80px auto;
@@ -641,7 +562,7 @@ header div {
 	overflow: auto;
 	width: 80%;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 6px auto;
 }.Logo__logo___20AFc a {
 	float: left;
 	width: 75px;
@@ -653,10 +574,9 @@ header div {
 	display: block;
 	content: url(/assets/img/logo.png);
 	text-indent: 0;
-	margin-top: 8px;
 }.Navigation__navigation___2_8kQ {
 	float: right;
-	margin: 25px 0 0;
+	margin: 17px 0 0;
 }
 
 .Navigation__navigation___2_8kQ button {

@@ -76,10 +76,8 @@
 
 	app.use((0, _compression2.default)());
 
-	// serve our static stuff like index.css
 	app.use(_express2.default.static(_path2.default.join(__dirname, 'public'), { index: false }));
 
-	// send all requests to index.html so browserHistory works
 	app.get('*', function (req, res) {
 	  (0, _reactRouter.match)({ routes: _routes2.default, location: req.url }, function (err, redirect, props) {
 	    if (err) {
@@ -328,7 +326,7 @@
 					_react2.default.createElement(
 						'li',
 						null,
-						'I love building and rebuilding websites.'
+						'I love being challenged and learning new things.'
 					),
 					_react2.default.createElement(
 						'li',
@@ -340,7 +338,7 @@
 					_react2.default.createElement(
 						'li',
 						null,
-						'I love building and rebuilding websites.'
+						'I have over 2 years of web development experience.'
 					)
 				);
 			}
@@ -2065,8 +2063,8 @@
 						_react2.default.createElement(
 							'nav',
 							null,
-							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'View Live Demo', link: 'http://www.w3.org/2000/svg', target: '_blank' }),
-							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'See Github Repo', link: 'https://github.com/melaniebmn/peaktrails', target: '_blank' })
+							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'View Live Demo', link: '//peaktrails.mbockmann.com/', target: '_blank' }),
+							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'See Github Repo', link: '//github.com/melaniebmn/peaktrails', target: '_blank' })
 						)
 					),
 					_react2.default.createElement(
@@ -2463,7 +2461,7 @@
 							_react2.default.createElement('img', { src: 'assets/img/project2-cover.jpg' })
 						),
 						_react2.default.createElement(_ProjectInfo2.default, {
-							text: ['Peak Trails is a website about hiking trails in and around Vancouver.', _react2.default.createElement('br', null), 'It shows you available trails and gives you a variety of information about each trail.', _react2.default.createElement('br', null), 'The project is a Wordpress theme and all the CSS is done with Less. I did all the UI/UX and icons as well for this project.'],
+							text: ['Said the whale is a website that is suppose to give you interesting and random facts about whales.', _react2.default.createElement('br', null), 'The project is done with Bootstrap and all the CSS is done with Less. I also did all the UI/UX for this project.'],
 							skill1: 'Bootstrap', skill2: 'HTML5', skill3: 'CSS3 (Less)', skill4: 'jQuery', skill5: 'Photoshop', skill6: 'Illustrator' })
 					),
 					_react2.default.createElement(
@@ -2473,8 +2471,8 @@
 						_react2.default.createElement(
 							'nav',
 							null,
-							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'View Live Demo', link: 'http://www.w3.org/2000/svg', target: '_blank' }),
-							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'See Github Repo', link: 'https://github.com/melaniebmn/saidthewhale', target: '_blank' })
+							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'View Live Demo', link: '//saidthewhale.mbockmann.com/', target: '_blank' }),
+							_react2.default.createElement(_Btn2.default, { width: '170', height: '50', btnLabel: 'See Github Repo', link: '//github.com/melaniebmn/saidthewhale', target: '_blank' })
 						)
 					),
 					_react2.default.createElement(
