@@ -56,11 +56,13 @@
 	.about section article {
 		padding: 5% 5% 5% 18%;
 	}
+
 	.about section article:before {
 		top: 20px;
 		left: -100px;
 		content: url(/assets/img/profile-mobile.png);
 	}
+
 	.about section:nth-child(3):before {
 		margin-top: -16%;
 	}
@@ -70,9 +72,11 @@
 	.about section article {
 		padding: 5%;
 	}
+
 	.about section article:before {
 		display: none;
 	}
+	
 	.about section:nth-child(3):before {
 		margin-top: -20%;
 	}
