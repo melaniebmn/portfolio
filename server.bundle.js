@@ -1317,6 +1317,26 @@
 								'in'
 							)
 						)
+					),
+					_react2.default.createElement(
+						'li',
+						null,
+						_react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+								'p',
+								null,
+								'Github',
+								_react2.default.createElement('br', null),
+								'Account'
+							),
+							_react2.default.createElement(
+								'a',
+								{ href: '//github.com/melaniebmn', target: '_blank' },
+								_react2.default.createElement('img', { src: '/assets/img/github-icon-black.png' })
+							)
+						)
 					)
 				);
 			}
