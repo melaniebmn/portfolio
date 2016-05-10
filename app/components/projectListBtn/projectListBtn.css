@@ -4,12 +4,13 @@
 	height: 165px;
 	text-align: center;
 	margin: 0 auto;
-	padding: 85px 0 0;
+	padding: 90px 0 0;
 	background: url(../../../public/assets/img/shapes/polygon.png) no-repeat;
 }
 
 .projectListBtn h3 {
     font-family: 'Josefin Thin';
 	font-size: 26px;
-	margin: 0 0 15px;
+	letter-spacing: 0;
+	margin: 0 0 10px;
 }
