@@ -6,38 +6,53 @@
 
 .contactlist li {
 	display: inline-block;
-	width: 25.8%;
+	width: calc((72% - 261px) / 3);
 	font-size: 20px;
-	padding: 4% 5%;
-}
-
-.contactlist li:nth-child(1) {
-	padding: 4% 5% 4% 0;
-}
-
-.contactlist li:nth-child(2) {
-	width: calc(23.3% - 4px);
-	border-left: 2px solid #252122;
+	padding: 4% 4.5%;
 	border-right: 2px solid #252122;
 }
 
-.contactlist li div {
-	overflow: auto;
-	position: relative;
-	top: 6px;
+.contactlist li:nth-child(1) {
+	padding: 4% 2.5% 4% 0;
 }
 
-.contactlist li div p {
-	float: left;
+.contactlist li:nth-child(2) {
+	width: 255px;
+	padding: 4% 3.5%;
+}
+
+.contactlist li:last-child {
+	border-right: none;
+}
+
+.contactlist li a {
+	color: #252122;
+}
+
+.contactlist li a:hover {
+	color: #e53b37;
+}
+
+.contactlist li div {
+	position: relative;
+}
+
+.contactlist li div p,
+.contactlist li div a {
+	display: inline-block;
 }
 
 .contactlist li div a {
-	float: right;
-	position: relative;
-	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
     font-family: 'Josefin Semibold';
 	padding: 10px 17px;
 	border: 2px solid #252122;
+}
+
+.contactlist li:nth-child(4) div a {
+	padding: 10px 12px;
 }
 
 .contactlist li div a:before {
@@ -50,6 +65,11 @@
 	height: 0;
 	content: '';
 	border-radius: 50%;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.contactlist li div a img {
 	-webkit-transition: all .5s;
 	transition: all .5s;
 }
@@ -72,31 +92,57 @@
 	transition: all .5s;
 }
 
-.contactlist li a {
-	color: #252122;
+.contactlist li:nth-child(4) div a:hover:after {
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	content: url(/assets/img/github-icon-white.png);
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 
-.contactlist li a:hover {
-	color: #e53b37;
+@media only screen and (max-width: 1160px) {
+	.contactlist li {
+		width: calc((75% - 259px) / 2);
+	}
+
+	.contactlist li:nth-child(1) {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 0 0 25px;
+		border-right: none;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.contactlist {
+		max-width: 535px;
+	}
+	.contactlist li:nth-child(2) {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		border-right: none;
+	}
+
+	.contactlist li {
+		width: calc(33% - 2px);
+		margin: 5% auto;
+		padding: 4% 8.5%;
+	}
 }
 
 @media only screen and (max-width: 760px) {
-	.contactlist {
-		text-align: center;
-	}
 	.contactlist li {
 		display: block;
 		width: 170px;
-		margin: 0 auto;
 		padding: 0;
+		border-right: none;
 	}
+
 	.contactlist li:nth-child(1) {
-		padding: 0 0 25px;
 		border-bottom: 2px solid #252122;
-	}
-	.contactlist li:nth-child(2) {
-		width: 100%;
-		margin: 10% auto;
-		border: none;
 	}
 }

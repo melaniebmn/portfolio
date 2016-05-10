@@ -20,6 +20,12 @@ export default class ContactList extends React.Component {
 						<a href="//www.linkedin.com/in/melanie-bockmann-98701078" target="_blank">in</a>
 					</div>
 				</li>
+				<li>
+					<div>
+						<p>Github<br/>Account</p>
+						<a href="//github.com/melaniebmn" target="_blank"><img src="/assets/img/github-icon-black.png" /></a>
+					</div>
+				</li>
 			</ul>
 		);
 	}
